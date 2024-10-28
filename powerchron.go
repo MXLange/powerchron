@@ -65,8 +65,6 @@ func newScheduler(scheduler *Scheduler, fn interface{}, params ...any) {
 		in[i] = reflect.ValueOf(param)
 	}
 
-	fmt.Println(sch)
-
 	fnValue := reflect.ValueOf(fn)
 	// Call the function imeadiatly
 	fnValue.Call(in)
